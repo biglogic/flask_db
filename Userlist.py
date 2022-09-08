@@ -3,15 +3,17 @@ from boto3.session import Session
 import csv
 from datetime import datetime
 
-name = input('Enter profile name : ')
-session = boto3.Session(profile_name=name)
+profileName = input("Profile_name : ")
+region = input("region : ")
+fileName = input("file_name : ")
+session = boto3.Session(profile_name=profileName,region_name=region)
 age = session.resource('iam')
 iam = session.client('iam')
 count = 0
 groups = []
 List_user = []
 time = []
-header = ['UserName','CreateDate','PasswordLastUsed','access_key[1]_used','access_key[2]_used','last_api_key[1]_used', 'last_api_key[1]_used'  , 'MFA' ,'passwordage','Assigned_group'  ]
+header = ['UserName','CreateDate','PasswordLastUsed','access_key[1]_used','access_key[2]_used','last_api_key[1]_used', 'last_api_key[2]_used'  , 'MFA' ,'passwordage','Assigned_group'  ]
 data = []
 list2 = []
 lastActivity = []
@@ -36,6 +38,11 @@ def get_group_list(userlist,group,date,password):
         name = groupNames['GroupName']
         groups.append(name) 
       get_acess_key(userlist,groups,date,password ,"No_MFA")    
+    else: 
+      for groupNames in group:
+        name = groupNames['GroupName']
+        groups.append(name) 
+      get_acess_key(userlist,groups,date,password ,"MFA_Exist")
 
 def get_acess_key (userlist,group_list,usercreate,password,mfa_status):    
         paginator = iam.get_paginator('list_access_keys')
@@ -98,7 +105,7 @@ def  password_age(val):
 
 
 def csv_(head,list_): 
-  with  open('prod_list.csv' , 'w' , encoding='UTF8') as f :
+  with  open(fileName+'.csv' , 'w' , encoding='UTF8') as f :
       csvwriter = csv.writer(f)
       csvwriter.writerow(head)
       print(List_user)    
