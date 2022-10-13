@@ -1,0 +1,18 @@
+{
+   "kubernetes":[
+        { "ns":"default",
+          "kube_service" : "jenkins",
+          "pvcname":["jenkins-vol-jenkins-0"],
+          "pvname":["pvc-7efd6a17-90b3-477d-9045-4fd1f02c7274"],
+          "storage":["12Gi"],
+          "storageclaim":["12Gi"],
+          "storageclassName":["gp2"],
+          "A_zone" : ["us-east-1b"],
+          "kskind" : "sts",
+          "fstype":["ext4"],
+          "volumeId":["vol-09f310d9f539e0f8b"],
+          "replicas":"1" 
+        }
+
+    ]
+}
