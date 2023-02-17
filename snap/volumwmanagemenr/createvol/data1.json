@@ -1,0 +1,30 @@
+
+{
+    "kubernetes":[
+         { "ns":"",
+           "kube_service" : "",
+           "pvcname":[""],
+           "pvname":["vol-07bb3b865c048b7ae", "vol-084ab5e3855731f9d"],
+           "storage":[""],
+           "storageclaim":[""],
+           "storageclassName":[""],
+           "kskind":"",
+           "fstype":[""],
+           "volumeId":["pvc2", "pvc1"],
+           "replicas":"" 
+         },
+         { "ns":"monitoring",
+          "kube_service" : "grafana",
+          "pvcname":["grafana-pvc"],
+          "pvname":["pvc-1d1cb1f0-70cc-468c-adb2-46dd6e3009a3"],
+          "storage":["40Gi"],
+          "storageclaim":["40Gi"],
+          "storageclassName":["gp2"],
+          "kskind":"deployment",
+          "fstype":["ext4"],
+          "volumeId":["vol-0a3270423abac431d"],
+          "replicas":"1" 
+        }         
+     ]
+ }
+    

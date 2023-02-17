@@ -1,0 +1,16 @@
+{
+    "kubernetes":[
+         { "ns":"default",
+           "kube_service" : "jenkins",
+           "pvcname":["jenkins-vol-jenkins-0","jenkins-vol-jenkins-1"],
+           "pvname":["pvc-29e8270e-a24e-4877-b0b5-620df3b1a18e","pvc-ea587f04-5a73-4bbd-9253-29d2237ad74f"],
+           "storage":["10Gi","10Gi"],
+           "storageclaim":["10Gi","10Gi"],
+           "storageclassName":["gp2","gp2"],
+           "kskind":"sts",
+           "fstype":["ext4","ext4"],
+           "volumeId":["vol-0b693da7b2b73867f","vol-0a9412c712f3dfb55" ],
+           "replicas":"1" 
+         }
+     ]
+ }
