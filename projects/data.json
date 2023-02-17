@@ -1,0 +1,257 @@
+[
+  {
+    "VULNERABILITY": [
+      {
+        "createTime": "2023-01-12T07:38:40.181490Z",
+        "kind": "VULNERABILITY",
+        "name": "projects/information-security-317119/occurrences/af0d08d5-7b80-497e-8dad-8d8802e6d822",
+        "noteName": "projects/goog-vulnz/notes/CVE-2022-30065",
+        "resourceUri": "https://gcr.io/information-security-317119/appliance-framework/9.2.0.0/pre-rc/pty-af-configmanager/config-manager@sha256:4e6094afc61b9a08c424cb38e1eac4229abab1a75d793d1f686e35c7951afe6f",
+        "updateTime": "2023-01-12T07:38:40.181490Z",
+        "vulnerability": {
+          "cvssScore": 6.8,
+          "cvssv3": {
+            "attackComplexity": "ATTACK_COMPLEXITY_LOW",
+            "attackVector": "ATTACK_VECTOR_LOCAL",
+            "availabilityImpact": "IMPACT_HIGH",
+            "baseScore": 7.8,
+            "confidentialityImpact": "IMPACT_HIGH",
+            "exploitabilityScore": 1.8,
+            "impactScore": 5.9,
+            "integrityImpact": "IMPACT_HIGH",
+            "privilegesRequired": "PRIVILEGES_REQUIRED_NONE",
+            "scope": "SCOPE_UNCHANGED",
+            "userInteraction": "USER_INTERACTION_REQUIRED"
+          },
+          "effectiveSeverity": "MEDIUM",
+          "fixAvailable": true,
+          "longDescription": "NIST vectors: AV:N/AC:M/Au:N/C:P/I:P/A:P",
+          "packageIssue": [
+            {
+              "affectedCpeUri": "cpe:/o:alpine:alpine_linux:3.16",
+              "affectedPackage": "busybox",
+              "affectedVersion": {
+                "fullName": "1.35.0-r13",
+                "kind": "NORMAL",
+                "name": "1.35.0",
+                "revision": "r13"
+              },
+              "effectiveSeverity": "MEDIUM",
+              "fixAvailable": true,
+              "fixedCpeUri": "cpe:/o:alpine:alpine_linux:3.16",
+              "fixedPackage": "busybox",
+              "fixedVersion": {
+                "fullName": "1.35.0-r15",
+                "kind": "NORMAL",
+                "name": "1.35.0",
+                "revision": "r15"
+              },
+              "packageType": "OS"
+            }
+          ],
+          "severity": "MEDIUM",
+          "shortDescription": "CVE-2022-30065"
+        }
+      },
+      {
+        "createTime": "2023-01-12T07:38:39.733970Z",
+        "kind": "VULNERABILITY",
+        "name": "projects/information-security-317119/occurrences/b61d550d-e413-4870-9eb5-54d166cc749b",
+        "noteName": "projects/goog-vulnz/notes/CVE-2022-37434",
+        "resourceUri": "https://gcr.io/information-security-317119/appliance-framework/9.2.0.0/pre-rc/pty-af-configmanager/config-manager@sha256:4e6094afc61b9a08c424cb38e1eac4229abab1a75d793d1f686e35c7951afe6f",
+        "updateTime": "2023-01-12T07:38:39.733970Z",
+        "vulnerability": {
+          "cvssScore": 9.8,
+          "cvssv3": {
+            "attackComplexity": "ATTACK_COMPLEXITY_LOW",
+            "attackVector": "ATTACK_VECTOR_NETWORK",
+            "availabilityImpact": "IMPACT_HIGH",
+            "baseScore": 9.8,
+            "confidentialityImpact": "IMPACT_HIGH",
+            "exploitabilityScore": 3.9,
+            "impactScore": 5.9,
+            "integrityImpact": "IMPACT_HIGH",
+            "privilegesRequired": "PRIVILEGES_REQUIRED_NONE",
+            "scope": "SCOPE_UNCHANGED",
+            "userInteraction": "USER_INTERACTION_NONE"
+          },
+          "effectiveSeverity": "CRITICAL",
+          "fixAvailable": true,
+          "longDescription": "NIST vectors: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "packageIssue": [
+            {
+              "affectedCpeUri": "cpe:/o:alpine:alpine_linux:3.16",
+              "affectedPackage": "zlib",
+              "affectedVersion": {
+                "fullName": "1.2.12-r1",
+                "kind": "NORMAL",
+                "name": "1.2.12",
+                "revision": "r1"
+              },
+              "effectiveSeverity": "CRITICAL",
+              "fixAvailable": true,
+              "fixedCpeUri": "cpe:/o:alpine:alpine_linux:3.16",
+              "fixedPackage": "zlib",
+              "fixedVersion": {
+                "fullName": "1.2.12-r2",
+                "kind": "NORMAL",
+                "name": "1.2.12",
+                "revision": "r2"
+              },
+              "packageType": "OS"
+            }
+          ],
+          "severity": "CRITICAL",
+          "shortDescription": "CVE-2022-37434"
+        }
+      }
+    ],
+    "digest": "sha256:4e6094afc61b9a08c424cb38e1eac4229abab1a75d793d1f686e35c7951afe6f",
+    "tags": [
+      "config-manager.9.2.0.0.13.07f998d3"
+    ],
+    "timestamp": {
+      "datetime": "2023-01-12 07:37:49+00:00",
+      "day": 12,
+      "fold": 0,
+      "hour": 7,
+      "microsecond": 0,
+      "minute": 37,
+      "month": 1,
+      "second": 49,
+      "year": 2023
+    },
+    "vuln_counts": {
+      "CRITICAL": 1,
+      "MEDIUM": 1
+    }
+  },
+  {
+    "VULNERABILITY": [
+      {
+        "createTime": "2022-12-28T17:24:59.526627Z",
+        "kind": "VULNERABILITY",
+        "name": "projects/information-security-317119/occurrences/c031d41a-1738-4bb9-b5d7-8c268b31d471",
+        "noteName": "projects/goog-vulnz/notes/CVE-2022-30065",
+        "resourceUri": "https://gcr.io/information-security-317119/appliance-framework/9.2.0.0/pre-rc/pty-af-configmanager/config-manager@sha256:521882be1aa908a4140e6d2a4233e2687e12a9b974eaa238fe35f8ed6486ecf1",
+        "updateTime": "2022-12-28T17:24:59.526627Z",
+        "vulnerability": {
+          "cvssScore": 6.8,
+          "cvssv3": {
+            "attackComplexity": "ATTACK_COMPLEXITY_LOW",
+            "attackVector": "ATTACK_VECTOR_LOCAL",
+            "availabilityImpact": "IMPACT_HIGH",
+            "baseScore": 7.8,
+            "confidentialityImpact": "IMPACT_HIGH",
+            "exploitabilityScore": 1.8,
+            "impactScore": 5.9,
+            "integrityImpact": "IMPACT_HIGH",
+            "privilegesRequired": "PRIVILEGES_REQUIRED_NONE",
+            "scope": "SCOPE_UNCHANGED",
+            "userInteraction": "USER_INTERACTION_REQUIRED"
+          },
+          "effectiveSeverity": "MEDIUM",
+          "fixAvailable": true,
+          "longDescription": "NIST vectors: AV:N/AC:M/Au:N/C:P/I:P/A:P",
+          "packageIssue": [
+            {
+              "affectedCpeUri": "cpe:/o:alpine:alpine_linux:3.16",
+              "affectedPackage": "busybox",
+              "affectedVersion": {
+                "fullName": "1.35.0-r13",
+                "kind": "NORMAL",
+                "name": "1.35.0",
+                "revision": "r13"
+              },
+              "effectiveSeverity": "MEDIUM",
+              "fixAvailable": true,
+              "fixedCpeUri": "cpe:/o:alpine:alpine_linux:3.16",
+              "fixedPackage": "busybox",
+              "fixedVersion": {
+                "fullName": "1.35.0-r15",
+                "kind": "NORMAL",
+                "name": "1.35.0",
+                "revision": "r15"
+              },
+              "packageType": "OS"
+            }
+          ],
+          "severity": "MEDIUM",
+          "shortDescription": "CVE-2022-30065"
+        }
+      },
+      {
+        "createTime": "2022-12-28T17:24:59.133751Z",
+        "kind": "VULNERABILITY",
+        "name": "projects/information-security-317119/occurrences/c1373067-b751-4d6d-86f5-a59c3bf54755",
+        "noteName": "projects/goog-vulnz/notes/CVE-2022-37434",
+        "resourceUri": "https://gcr.io/information-security-317119/appliance-framework/9.2.0.0/pre-rc/pty-af-configmanager/config-manager@sha256:521882be1aa908a4140e6d2a4233e2687e12a9b974eaa238fe35f8ed6486ecf1",
+        "updateTime": "2022-12-28T17:24:59.133751Z",
+        "vulnerability": {
+          "cvssScore": 9.8,
+          "cvssv3": {
+            "attackComplexity": "ATTACK_COMPLEXITY_LOW",
+            "attackVector": "ATTACK_VECTOR_NETWORK",
+            "availabilityImpact": "IMPACT_HIGH",
+            "baseScore": 9.8,
+            "confidentialityImpact": "IMPACT_HIGH",
+            "exploitabilityScore": 3.9,
+            "impactScore": 5.9,
+            "integrityImpact": "IMPACT_HIGH",
+            "privilegesRequired": "PRIVILEGES_REQUIRED_NONE",
+            "scope": "SCOPE_UNCHANGED",
+            "userInteraction": "USER_INTERACTION_NONE"
+          },
+          "effectiveSeverity": "CRITICAL",
+          "fixAvailable": true,
+          "longDescription": "NIST vectors: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "packageIssue": [
+            {
+              "affectedCpeUri": "cpe:/o:alpine:alpine_linux:3.16",
+              "affectedPackage": "zlib",
+              "affectedVersion": {
+                "fullName": "1.2.12-r1",
+                "kind": "NORMAL",
+                "name": "1.2.12",
+                "revision": "r1"
+              },
+              "effectiveSeverity": "CRITICAL",
+              "fixAvailable": true,
+              "fixedCpeUri": "cpe:/o:alpine:alpine_linux:3.16",
+              "fixedPackage": "zlib",
+              "fixedVersion": {
+                "fullName": "1.2.12-r2",
+                "kind": "NORMAL",
+                "name": "1.2.12",
+                "revision": "r2"
+              },
+              "packageType": "OS"
+            }
+          ],
+          "severity": "CRITICAL",
+          "shortDescription": "CVE-2022-37434"
+        }
+      }
+    ],
+    "digest": "sha256:521882be1aa908a4140e6d2a4233e2687e12a9b974eaa238fe35f8ed6486ecf1",
+    "tags": [
+      "config-manager.9.2.0.0.10.2c3aa37e",
+      "config-manager.9.2.0.0.4.a5fb98a7"
+    ],
+    "timestamp": {
+      "datetime": "2022-12-28 17:23:51+00:00",
+      "day": 28,
+      "fold": 0,
+      "hour": 17,
+      "microsecond": 0,
+      "minute": 23,
+      "month": 12,
+      "second": 51,
+      "year": 2022
+    },
+    "vuln_counts": {
+      "CRITICAL": 1,
+      "MEDIUM": 1
+    }
+  }
+]
